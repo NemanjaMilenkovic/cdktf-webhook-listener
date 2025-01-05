@@ -1,0 +1,18 @@
+{
+    "name": "webhook-lambda",
+    "version": "1.0.0",
+    "description": "Webhook Lambda Handler",
+    "main": "index.js",
+    "scripts": {
+      "build": "tsc",
+      "package": "npm run build && cd dist && zip -r ../function.zip ."
+    },
+    "dependencies": {
+      "aws-sdk": "^2.1500.0"
+    },
+    "devDependencies": {
+      "@types/aws-lambda": "^8.10.147",
+      "@types/node": "^22.10.5",
+      "typescript": "^5.7.2"
+    }
+  }
